@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imammehedihasan22102930.github.io/Imam-Mehedi_Hasan/sitemap.xml
