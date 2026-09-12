@@ -7,11 +7,9 @@
 <meta name="description" content="Imam Mehedi Hasan — Electrical and Electronic Engineering student at Jatiya Kabi Kazi Nazrul Islam University. Power engineering, embedded systems, robotics and applied research.">
 <meta name="theme-color" content="#071018">
 <title>Imam Mehedi Hasan | EEE Engineer & Researcher</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root{
   --bg:#071018;--bg2:#0b1420;--panel:#0e1925;--panel2:#111f2d;
@@ -36,7 +34,6 @@ section{max-width:var(--max);margin:auto;padding:100px 5vw}
 .section-num{color:var(--green);font-size:.76rem;letter-spacing:2px;text-transform:uppercase}
 .section-title{font:700 clamp(1.8rem,4vw,2.7rem)/1.15 "Space Grotesk",sans-serif;margin-top:8px}
 .rule{width:70px;height:1px;background:linear-gradient(90deg,var(--green),transparent);margin-top:14px}
-
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 5vw;
 display:flex;justify-content:space-between;align-items:center;background:#071018c9;
@@ -44,22 +41,25 @@ backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .logo{display:flex;align-items:center;gap:9px;font:700 1rem "Space Grotesk"}
 .logo-mark{width:27px;height:27px;fill:none;stroke:var(--green);stroke-width:2}
 .logo-mark circle{fill:var(--gold);stroke:none}
-.nav-links{display:flex;gap:22px;align-items:center;font-size:.8rem}
+.nav-links{display:flex;gap:18px;align-items:center;font-size:.78rem;flex-wrap:wrap}
 .nav-links a{color:var(--muted);padding:4px 0;position:relative}
 .nav-links a:after{content:"";position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--green);transition:.25s}
 .nav-links a:hover,.nav-links a.active{color:var(--green)}
 .nav-links a:hover:after,.nav-links a.active:after{width:100%}
 .nav-toggle{display:none;background:none;border:0;cursor:pointer}
 .nav-toggle span{display:block;width:24px;height:2px;background:var(--text);margin:5px}
-
 /* HERO */
 #hero{min-height:100vh;display:grid;place-items:center;position:relative;overflow:hidden;padding-top:80px}
 #hero-canvas{position:absolute;inset:0;width:100%;height:100%}
 .hero-glow{position:absolute;inset:0;background:radial-gradient(circle at center,#00e5a008,transparent 48%),
 linear-gradient(180deg,transparent 60%,var(--bg) 100%);pointer-events:none}
 .hero-inner{position:relative;z-index:2;text-align:center;max-width:900px;padding:50px 5vw}
-.avatar{width:118px;height:118px;object-fit:cover;border-radius:50%;border:2px solid var(--green);
-box-shadow:0 0 0 7px #00e5a012,0 0 45px -8px var(--green);margin:0 auto 24px}
+.avatar{
+  width:132px;height:132px;object-fit:cover;object-position:center 22%;
+  border-radius:50%;border:2px solid var(--green);display:block;
+  box-shadow:0 0 0 7px #00e5a012,0 0 45px -8px var(--green);
+  margin:0 auto 24px;background:#101b27;
+}
 .eyebrow{display:inline-block;color:var(--green);border:1px solid #00e5a033;background:#00e5a00a;
 border-radius:999px;padding:7px 15px;font-size:.72rem;letter-spacing:2px;margin-bottom:20px}
 .hero-name{font:700 clamp(2.7rem,8vw,5.6rem)/1 "Space Grotesk";letter-spacing:-2px;
@@ -77,7 +77,6 @@ border-radius:5px;font-size:.84rem;font-weight:700;transition:.25s}
 .btn.primary:hover{background:transparent}
 .btn.gold{border-color:#ffb84d55;color:var(--gold)}
 .scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:var(--muted);font:10px "JetBrains Mono";letter-spacing:2px}
-
 /* CARDS / GRIDS */
 .grid{display:grid;gap:18px}
 .grid-3{grid-template-columns:repeat(3,1fr)}
@@ -88,7 +87,6 @@ border-radius:10px;padding:25px;transition:.3s;position:relative}
 .card h3{font:700 1.05rem "Space Grotesk";margin-bottom:7px}
 .card p{color:var(--muted);font-size:.9rem}
 .card .icon{font-size:1.4rem;color:var(--green);margin-bottom:12px}
-
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:start}
 .about-copy p{color:var(--muted);margin-bottom:15px}
@@ -97,18 +95,15 @@ border-radius:10px;padding:25px;transition:.3s;position:relative}
 .info-list{margin-top:18px}
 .info{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.84rem}
 .info:last-child{border:0}.info span:first-child{color:var(--muted);font-family:"JetBrains Mono"}.info span:last-child{text-align:right}
-
 /* STATS */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
 .stat{text-align:center;padding:18px 10px;border:1px solid var(--line);background:#0c1722;border-radius:8px}
 .stat-number{display:block;font:700 1.5rem "Space Grotesk";color:var(--green)}
 .stat-label{display:block;color:var(--muted);font-size:.65rem;margin-top:3px}
-
 /* RESEARCH */
 .interest-card{min-height:155px}
 .interest-card h3{font-size:1rem}
 .research-note{margin-top:20px;padding:18px 20px;border-left:2px solid var(--gold);background:#ffb84d08;color:var(--muted);font-size:.88rem}
-
 /* EDUCATION */
 .timeline{border-left:1px solid var(--line);padding-left:30px}
 .t-item{position:relative;margin-bottom:28px}
@@ -117,14 +112,12 @@ background:var(--green);box-shadow:0 0 0 4px #00e5a018}
 .t-year{color:var(--green);font:600 .72rem "JetBrains Mono";letter-spacing:1px}
 .t-title{font:700 1.05rem "Space Grotesk";margin-top:4px}
 .t-sub{color:var(--muted);font-size:.88rem}
-
 /* SKILLS */
 .skill-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .skill-group h3{font:700 1rem "Space Grotesk";margin-bottom:14px}
 .skill-list{display:flex;flex-wrap:wrap;gap:8px}
 .skill{font:.72rem "JetBrains Mono";padding:7px 10px;border:1px solid var(--line);border-radius:5px;color:#c3d0d8;background:#0b1621}
 .skill:hover{border-color:#00e5a055;color:var(--green)}
-
 /* PROJECTS */
 .filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
 .filter{cursor:pointer;background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:7px 13px;font:600 .7rem "JetBrains Mono"}
@@ -135,44 +128,67 @@ background:var(--green);box-shadow:0 0 0 4px #00e5a018}
 .project-code{color:var(--gold);font:.68rem "JetBrains Mono"}
 .rank{font:700 .68rem "JetBrains Mono";border:1px solid;padding:4px 7px;border-radius:4px;color:var(--green)}
 .rank-S{color:var(--gold);border-color:#ffb84d77}.rank-A{border-color:#00e5a055}
+.rank-B{color:var(--blue);border-color:#70bfff55}
 .project h3{margin-bottom:8px}.project p{min-height:68px}
 .tech{display:inline-block;margin-top:14px;font-size:.62rem;color:var(--green);border:1px solid #00e5a033;padding:4px 8px;border-radius:20px}
-
 /* EXPERIENCE / ACHIEVEMENTS */
 .experience{border-left:2px solid var(--green)}
 .experience .period{color:var(--gold);font:.7rem "JetBrains Mono"}
 .experience ul{padding-left:18px;margin-top:12px;color:var(--muted);font-size:.88rem}
 .experience li{margin:6px 0}
-
 /* RESEARCH */
 .research-card .status{font:.65rem "JetBrains Mono";color:var(--gold)}
 .research-card h3{margin:9px 0}
 .research-card p{margin-bottom:12px}
-
 /* CV */
 .cv{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:center}
 .cv-preview{height:240px;border:1px solid var(--line);border-radius:8px;background:
 linear-gradient(135deg,#142331,#0b141e);display:grid;place-items:center;text-align:center;padding:20px}
 .cv-preview strong{font:700 1.4rem "Space Grotesk";color:var(--green)}
 .cv-text p{color:var(--muted);margin-bottom:18px}
-
 /* GALLERY */
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .gallery img{width:100%;height:230px;object-fit:cover;border-radius:8px;border:1px solid var(--line);transition:.3s}
 .gallery img:hover{transform:scale(1.015);border-color:#00e5a044}
-
 /* CONTACT */
 #contact{text-align:center}
 #contact .section-head{margin-bottom:20px}
 .contact-text{max-width:620px;margin:0 auto 25px;color:var(--muted)}
 .contact-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
 footer{text-align:center;border-top:1px solid var(--line);padding:28px 5vw;color:var(--muted);font:10px "JetBrains Mono"}
-
+/* PROJECT DETAIL EXPERIENCE */
+.project-cover{
+  width:100%;aspect-ratio:16/9;object-fit:cover;display:block;
+  border-radius:8px;border:1px solid var(--line);background:#09131d;
+  margin:14px 0 18px;
+}
+.project-card-image{
+  width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center;
+  border-radius:7px;margin:-25px -25px 18px;width:calc(100% + 50px);
+  border-bottom:1px solid var(--line);display:block;background:#09131d;
+}
+.project-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+.detail-box{border:1px solid var(--line);border-radius:8px;padding:15px;background:#0a1520}
+.detail-box strong{display:block;color:var(--green);font:600 .67rem "JetBrains Mono";letter-spacing:1px;margin-bottom:6px}
+.detail-box span{color:var(--muted);font-size:.83rem}
+.modal-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.modal-actions .btn{padding:9px 14px;font-size:.75rem}.resource-note{font-size:.78rem;color:var(--muted);padding:8px 0}
+.modal-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
+.modal-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;border:1px solid var(--line);background:#09131d}
+.modal-section-title{font:700 .9rem "Space Grotesk";margin-top:22px;margin-bottom:7px}
+@media(max-width:620px){
+  .project-detail-grid{grid-template-columns:1fr}
+  .modal-gallery{grid-template-columns:repeat(2,1fr)}
+}
+.project-open{margin-top:18px;padding-top:12px;border-top:1px solid var(--line);color:var(--green);font:600 .65rem "JetBrains Mono";letter-spacing:1px}
+.project-open span{display:inline-block;transition:.2s}
+.project:hover .project-open span{transform:translate(3px,-3px)}
+.modal-box::-webkit-scrollbar{width:8px}.modal-box::-webkit-scrollbar-thumb{background:#203242;border-radius:8px}
 /* MODAL */
 .modal{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:.25s}
 .modal.open{opacity:1;visibility:visible}
 .modal-bg{position:absolute;inset:0;background:#03080dcc;backdrop-filter:blur(8px)}
-.modal-box{position:relative;z-index:2;width:min(650px,100%);max-height:85vh;overflow:auto;background:var(--panel);
+.modal-box{position:relative;z-index:2;width:min(980px,100%);max-height:90vh;overflow:auto;background:var(--panel);
 border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padding:30px}
 .modal-close{position:absolute;right:12px;top:10px;background:none;border:0;color:var(--muted);font-size:1.8rem;cursor:pointer}
 .modal-close:hover{color:var(--green)}
@@ -180,7 +196,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
 .modal-box h2{font:700 1.6rem "Space Grotesk";margin:8px 0 12px}
 .modal-box p{color:var(--muted)}
 .modal-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
-
 /* MOBILE */
 @media(max-width:900px){
  .nav-links{position:fixed;right:0;top:57px;width:280px;height:calc(100vh - 57px);padding:30px 25px;
@@ -196,8 +211,33 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
+<!--
+PROJECT ASSET STRUCTURE
+Create these folders inside your GitHub Pages repository:
+images/
+  projects/
+    project-placeholder.jpg
+    pose-lock/
+      cover.jpg
+      1.jpg
+      2.jpg
+      3.jpg
+    medicine-authenticity/
+      cover.jpg
+      1.jpg
+      2.jpg
+    hexapod/
+      cover.jpg
+      1.jpg
+      2.jpg
+    ...
+For a project paper, put the PDF in something like:
+papers/pose-lock-paper.pdf
+Then change that project's "paper" field from "" to:
+paper:"papers/pose-lock-paper.pdf"
+For a YouTube/demo link, put it in the project's "demo" field.
+-->
 </head>
-
 <body>
 <nav>
   <a class="logo" href="#hero" aria-label="Imam Mehedi Hasan home">
@@ -207,18 +247,18 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
   <div class="nav-links" id="navLinks">
     <a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a>
     <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
+    <a href="#achievements">Highlights</a><a href="#research-work">Publications</a>
     <a href="#cv">CV</a><a href="#contact">Contact</a>
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="Open navigation"><span></span><span></span><span></span></button>
 </nav>
-
 <section id="hero">
   <canvas id="hero-canvas"></canvas><div class="hero-glow"></div>
   <div class="hero-inner">
     <img class="avatar" src="profile.jpg" alt="Imam Mehedi Hasan">
     <div class="eyebrow">Electrical & Electronic Engineering</div>
     <h1 class="hero-name">IMAM MEHEDI HASAN</h1>
-    <div class="hero-role">EEE Student • Engineer in Training • Research-Oriented Builder</div>
+    <div class="hero-role">EEE Student • Engineering & Research</div>
     <p class="hero-summary">
       B.Sc. Engineering student at Jatiya Kabi Kazi Nazrul Islam University, working across
       power engineering, embedded systems, robotics, control and applied engineering research.
@@ -235,7 +275,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
   </div>
   <div class="scroll">SCROLL ↓</div>
 </section>
-
 <section id="about">
   <div class="section-head"><div class="section-num">01 / Profile</div><h2 class="section-title">About Me</h2><div class="rule"></div></div>
   <div class="about-grid">
@@ -245,8 +284,7 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
       <p>My long-term direction is to grow as an engineer and researcher, with particular interest in power engineering, intelligent systems and applied research.</p>
       <div class="stats">
         <div class="stat"><span class="stat-number">EEE</span><span class="stat-label">DISCIPLINE</span></div>
-        <div class="stat"><span class="stat-number">16+</span><span class="stat-label">PROJECTS</span></div>
-        <div class="stat"><span class="stat-number">3.5+</span><span class="stat-label">CURRENT CGPA RANGE</span></div>
+        <div class="stat"><span class="stat-number">18+</span><span class="stat-label">PROJECTS</span></div>
         <div class="stat"><span class="stat-number">2026</span><span class="stat-label">FINAL-YEAR PHASE</span></div>
       </div>
     </div>
@@ -261,7 +299,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     </div>
   </div>
 </section>
-
 <section id="research">
   <div class="section-head"><div class="section-num">02 / Research</div><h2 class="section-title">Research Interests</h2><div class="rule"></div></div>
   <div class="grid grid-3">
@@ -274,7 +311,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
   </div>
   <div class="research-note">Research direction: building measurable engineering systems and turning practical prototypes into reproducible academic work.</div>
 </section>
-
 <section id="education">
   <div class="section-head"><div class="section-num">03 / Education</div><h2 class="section-title">Academic Journey</h2><div class="rule"></div></div>
   <div class="timeline">
@@ -285,7 +321,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     <div class="t-item"><div class="t-year">PSC</div><div class="t-title">Protiva Pre-Cadet & Academy</div><div class="t-sub">Primary School Certificate</div></div>
   </div>
 </section>
-
 <section id="skills">
   <div class="section-head"><div class="section-num">04 / Toolkit</div><h2 class="section-title">Technical Skills</h2><div class="rule"></div></div>
   <div class="skill-groups">
@@ -303,7 +338,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     </div></div>
   </div>
 </section>
-
 <section id="projects">
   <div class="section-head"><div class="section-num">05 / Engineering Work</div><h2 class="section-title">Selected Projects</h2><div class="rule"></div></div>
   <div class="filter-row" id="filters">
@@ -313,7 +347,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
   </div>
   <div class="project-grid" id="projectGrid"></div>
 </section>
-
 <section id="experience">
   <div class="section-head"><div class="section-num">06 / Experience</div><h2 class="section-title">Research & Engineering Experience</h2><div class="rule"></div></div>
   <div class="grid grid-2">
@@ -327,7 +360,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     </div>
   </div>
 </section>
-
 <section id="achievements">
   <div class="section-head"><div class="section-num">07 / Highlights</div><h2 class="section-title">Achievements & Activities</h2><div class="rule"></div></div>
   <div class="grid grid-3">
@@ -336,7 +368,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     <div class="card"><h3>Technical Portfolio</h3><p>Maintaining project documentation across GitHub and a dedicated engineering portfolio.</p></div>
   </div>
 </section>
-
 <section id="research-work">
   <div class="section-head"><div class="section-num">08 / Research Output</div><h2 class="section-title">Research & Publications</h2><div class="rule"></div></div>
   <div class="grid grid-2">
@@ -344,19 +375,17 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     <div class="card research-card"><span class="status">DEVELOPING</span><h3>Pose Lock Smart Intelligence Robot</h3><p>Robotic target-locking system using Raspberry Pi, camera-based pose detection, obstacle sensing and motor control.</p><span class="tech">RASPBERRY PI • MEDIAPIPE • ROBOTICS</span></div>
   </div>
 </section>
-
 <section id="cv">
   <div class="section-head"><div class="section-num">09 / Credentials</div><h2 class="section-title">Curriculum Vitae</h2><div class="rule"></div></div>
   <div class="card cv">
     <div class="cv-preview"><div><strong>CV</strong><br><span class="mono" style="font-size:.65rem;color:var(--muted)">IMAM MEHEDI HASAN</span></div></div>
-    <div class="cv-text"><h3>Professional Engineering Profile</h3><p>A concise CV covering academic background, technical skills, selected projects, research interests and engineering experience.</p>
+    <div class="cv-text"><h3>Professional Engineering Profile</h3><p>A concise CV covering academic background, technical skills, selected projects, research interests and engineering experience.</p><p style="font-size:.78rem;color:var(--muted)">Each selected project now has a dedicated detail view for images, technical information, GitHub resources, papers and future demo links.</p>
       <div class="btns" style="justify-content:flex-start"><a class="btn primary" href="Imam_Mehedi_Hasan_Resume_Corporate.pdf" download>Download PDF</a>
       <a class="btn" href="https://www.linkedin.com/in/imam-mehedi-hasan-21b788353" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://www.researchgate.net/" target="_blank" rel="noopener">ResearchGate</a></div>
+      <a class="btn" href="https://www.researchgate.net/profile/Imam-Hasan-9?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a></div>
     </div>
   </div>
 </section>
-
 <section id="gallery">
   <div class="section-head"><div class="section-num">10 / Visual</div><h2 class="section-title">Gallery</h2><div class="rule"></div></div>
   <div class="gallery">
@@ -365,7 +394,6 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     <img src="m_2.jpg" alt="Engineering activity" loading="lazy">
   </div>
 </section>
-
 <section id="contact">
   <div class="section-head"><div class="section-num">11 / Connect</div><h2 class="section-title">Let's Connect</h2><div class="rule" style="margin-left:auto;margin-right:auto"></div></div>
   <p class="contact-text">I am interested in engineering opportunities, research collaboration, academic projects and practical EEE work.</p>
@@ -373,51 +401,248 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
     <a class="btn primary" href="mailto:imammehedihasan22102930@gmail.com">Email</a>
     <a class="btn" href="https://www.linkedin.com/in/imam-mehedi-hasan-21b788353" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="https://github.com/imam22102930" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn" href="https://www.researchgate.net/" target="_blank" rel="noopener">ResearchGate</a>
+    <a class="btn" href="https://www.researchgate.net/profile/Imam-Hasan-9?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>
   </div>
 </section>
-
 <footer>© 2026 IMAM MEHEDI HASAN • ELECTRICAL & ELECTRONIC ENGINEERING • JKKNIU</footer>
-
 <div class="modal" id="modal" aria-hidden="true">
   <div class="modal-bg" id="modalBg"></div>
   <div class="modal-box">
     <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-    <div class="modal-code" id="mCode"></div><h2 id="mTitle"></h2><p id="mDesc"></p><div class="modal-meta" id="mMeta"></div>
+    <div class="modal-code" id="mCode"></div>
+    <h2 id="mTitle"></h2>
+    <img class="project-cover" id="mImage" src="" alt="Project image">
+    <p id="mDesc"></p>
+    <div class="modal-meta" id="mMeta"></div>
+    <div class="project-detail-grid">
+      <div class="detail-box"><strong>OBJECTIVE</strong><span id="mObjective"></span></div>
+      <div class="detail-box"><strong>TECHNOLOGY</strong><span id="mTechnology"></span></div>
+      <div class="detail-box"><strong>HARDWARE</strong><span id="mHardware"></span></div>
+      <div class="detail-box"><strong>RESULT / STATUS</strong><span id="mResult"></span></div>
+    </div>
+    <div class="modal-section-title">Technical Overview</div>
+    <p id="mDetails"></p>
+    <div class="modal-section-title" id="galleryTitle">Project Images</div>
+    <div class="modal-gallery" id="mGallery"></div>
+    <div class="modal-actions" id="mActions"></div>
   </div>
 </div>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 /* ---------- NAV ---------- */
 const navToggle=document.getElementById("navToggle"),navLinks=document.getElementById("navLinks");
 navToggle.onclick=()=>navLinks.classList.toggle("open");
 document.querySelectorAll(".nav-links a").forEach(a=>a.onclick=()=>navLinks.classList.remove("open"));
-
 /* ---------- PROJECT DATA ---------- */
 const projects=[
- {code:"R-01",title:"Pose Lock Smart Intelligence Robot",cat:"robotics",featured:true,rank:"S",desc:"Raspberry Pi based intelligent robot using camera pose detection, ultrasonic sensing and motor control to lock onto a visible human target and search when the target is lost.",tech:"Raspberry Pi • MediaPipe • Computer Vision"},
- {code:"R-02",title:"Human Following Robot",cat:"robotics",featured:true,rank:"A",desc:"Camera-based human following system using pose detection to estimate a person's position and control robot movement in real time.",tech:"Python • MediaPipe • Robotics"},
- {code:"R-03",title:"Hexapod",cat:"robotics",featured:true,rank:"S",desc:"Six-legged walking robot designed for coordinated multi-servo movement and navigation across uneven surfaces.",tech:"Servo Control • Robotics"},
- {code:"R-04",title:"Wall Climbing Robot",cat:"robotics",featured:false,rank:"S",desc:"Surface-mobility robot developed around adhesion and controlled movement on vertical surfaces.",tech:"Motors • Mechanics • Control"},
- {code:"R-05",title:"Line Following & Obstacle Avoidance Robot",cat:"robotics",featured:false,rank:"A",desc:"Autonomous mobile robot that follows a line and reacts to obstacles in its path.",tech:"Sensors • Embedded C • Motors"},
- {code:"R-06",title:"Robotic Hand",cat:"robotics",featured:false,rank:"A",desc:"Servo-driven mechanical hand designed to reproduce finger movement for basic gripping and manipulation.",tech:"Servos • Embedded Systems"},
- {code:"R-07",title:"Soccer Bot",cat:"robotics",featured:false,rank:"B",desc:"Competition-oriented mobile robot developed for robotic soccer activities.",tech:"Embedded • Motor Control"},
- {code:"A-01",title:"Medicine Authenticity Detection System",cat:"automation",featured:true,rank:"S",desc:"ESP32 and ESP32-CAM based inspection system combining UV sensing, load-cell measurement, LCD output and a Flask/OpenCV monitoring interface.",tech:"ESP32 • ESP32-CAM • HX711 • Flask"},
- {code:"A-02",title:"Smart Irrigation System",cat:"automation",featured:true,rank:"A",desc:"Automated irrigation prototype that responds to environmental and soil conditions to manage watering.",tech:"Sensors • ESP32/Arduino • Automation"},
- {code:"A-03",title:"Home Automation",cat:"automation",featured:false,rank:"B",desc:"Embedded home-control system for monitoring and controlling electrical appliances.",tech:"IoT • Microcontroller"},
- {code:"A-04",title:"Smart Street Light Control",cat:"automation",featured:false,rank:"B",desc:"Automatic lighting concept based on environmental light and activity conditions.",tech:"LDR • Automation"},
- {code:"A-05",title:"Smart Electricity Theft Detection",cat:"automation",featured:false,rank:"A",desc:"Concept system for identifying abnormal electricity usage and communicating an alert with location information.",tech:"Sensors • GPS/GSM • Embedded"},
- {code:"A-06",title:"Smart Fingerprint Attendance System",cat:"automation",featured:false,rank:"B",desc:"Fingerprint-based attendance system for automated user identification and record keeping.",tech:"AS608 • Microcontroller • LCD"},
- {code:"S-01",title:"Remote ECG Monitoring",cat:"safety",featured:true,rank:"A",desc:"Biomedical monitoring prototype for acquiring ECG signals and transmitting measurements for remote observation.",tech:"ECG • Embedded • Wireless"},
- {code:"S-02",title:"EMG-Based Alcohol Detection & Signaling",cat:"safety",featured:false,rank:"A",desc:"Prototype exploring EMG-based physiological sensing for driver safety and alert signaling.",tech:"EMG • Embedded • Safety"},
- {code:"S-03",title:"Emergency Alert System",cat:"safety",featured:false,rank:"B",desc:"Embedded emergency notification prototype designed to send an alert when a trigger condition is detected.",tech:"GSM • Sensors • Embedded"},
- {code:"E-01",title:"Piezoelectric Power Generation & Storage",cat:"energy",featured:true,rank:"A",desc:"Energy-harvesting prototype exploring conversion of mechanical vibration into electrical energy and storage.",tech:"Piezoelectric • Energy Harvesting"}
+{
+ code:"R-01",title:"Pose Lock Smart Intelligence Robot",cat:"robotics",featured:true,rank:"S",
+ image:"images/projects/pose-lock/cover.jpg",
+ gallery:["images/projects/pose-lock/1.jpg","images/projects/pose-lock/2.jpg","images/projects/pose-lock/3.jpg"],
+ desc:"A Raspberry Pi based intelligent mobile robot that detects a human target through camera-based pose landmarks, maintains a target lock and performs a controlled search when the target is lost.",
+ objective:"Detect and lock onto a visible human target while combining vision, distance sensing and motor control.",
+ technology:"Raspberry Pi 4B • Python • MediaPipe Pose • OpenCV",
+ hardware:"USB webcam • 4 gear motors • dual H-bridge • ultrasonic sensor • buzzer • LEDs",
+ result:"Completed prototype. Target-locking and lost-target search logic implemented and tested.",
+ details:"The system uses MediaPipe pose landmarks for human detection, an ultrasonic sensor for distance awareness and a motor driver for movement. When the target is lost, the robot provides an alert and performs a slow search behaviour.",
+ paper:"",
+ github:"",demo:""
+},
+{
+ code:"A-01",title:"Medicine Authenticity Detection System",cat:"automation",featured:true,rank:"S",
+ image:"images/projects/medicine-authenticity/cover.jpg",
+ gallery:["images/projects/medicine-authenticity/1.jpg","images/projects/medicine-authenticity/2.jpg"],
+ desc:"An embedded inspection and monitoring system combining ESP32, ESP32-CAM, UV sensing, load-cell measurement and a web monitoring interface.",
+ objective:"Create a practical prototype for checking measurable physical characteristics of medicine packaging or samples.",
+ technology:"ESP32 • ESP32-CAM • Flask • OpenCV",
+ hardware:"HX711 load cell module • UV detector • LCD • ESP32-CAM",
+ result:"Completed prototype with sensor measurement, camera streaming and monitoring interface.",
+ details:"The system integrates multiple sensing methods with a camera stream and LCD output. Measurements can be collected and viewed through a lightweight Flask/OpenCV interface.",
+ paper:"",
+ github:"",demo:""
+},
+{
+ code:"R-02",title:"Human Following Robot",cat:"robotics",featured:true,rank:"A",
+ image:"images/projects/human-following/cover.jpg",gallery:["images/projects/human-following/1.jpg"],
+ desc:"A camera-based mobile robot concept that uses human position information to control movement in real time.",
+ objective:"Estimate human position and translate visual information into robot movement.",
+ technology:"Python • Computer Vision • MediaPipe",
+ hardware:"Camera • motors • motor driver • embedded controller",
+ result:"Prototype developed and tested.",
+ details:"The project focuses on the connection between computer vision and mobile robot control, providing a practical foundation for intelligent navigation.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"R-03",title:"Hexapod Robot",cat:"robotics",featured:true,rank:"S",
+ image:"images/projects/hexapod/cover.jpg",gallery:["images/projects/hexapod/1.jpg","images/projects/hexapod/2.jpg"],
+ desc:"A six-legged robotic platform developed around coordinated servo movement and walking patterns.",
+ objective:"Develop a multi-leg robot capable of coordinated movement using servo actuation.",
+ technology:"Embedded control • Servo programming • Robotics",
+ hardware:"12 servos • controller • mechanical frame • power system",
+ result:"Prototype completed.",
+ details:"The hexapod explores gait coordination, servo timing, mechanical balance and embedded motion control.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"R-04",title:"Wall Climbing Robot",cat:"robotics",featured:false,rank:"S",
+ image:"images/projects/wall-climbing/cover.jpg",gallery:["images/projects/wall-climbing/1.jpg"],
+ desc:"A surface-mobility robot designed to investigate controlled movement on vertical surfaces.",
+ objective:"Explore a practical robotic mechanism for stable surface movement.",
+ technology:"Motor control • Mechanical design • Embedded systems",
+ hardware:"Motors • wheels/adhesion mechanism • controller",
+ result:"Prototype / development project.",
+ details:"The project combines mechanical design and motor control to study the challenges of maintaining traction while moving across a wall.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"A-02",title:"Smart Irrigation System",cat:"automation",featured:true,rank:"A",
+ image:"images/projects/smart-irrigation/cover.jpg",gallery:["images/projects/smart-irrigation/1.jpg"],
+ desc:"An automated irrigation prototype that uses environmental measurements to control watering.",
+ objective:"Reduce unnecessary watering by making irrigation responsive to measured conditions.",
+ technology:"Arduino / ESP32 • Sensors • Automation",
+ hardware:"Soil/environment sensors • pump • relay • controller",
+ result:"Working prototype.",
+ details:"The system connects sensor readings with an automatic pump-control decision, demonstrating a practical embedded automation application.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"S-01",title:"Remote ECG Monitoring System",cat:"safety",featured:true,rank:"A",
+ image:"images/projects/ecg/cover.jpg",gallery:["images/projects/ecg/1.jpg"],
+ desc:"A biomedical monitoring prototype for acquiring ECG signals and presenting measurements for remote observation.",
+ objective:"Acquire and communicate ECG information using an embedded monitoring system.",
+ technology:"ECG sensing • Embedded systems • Wireless communication",
+ hardware:"ECG sensor • microcontroller • display / communication module",
+ result:"Prototype developed.",
+ details:"The project focuses on signal acquisition, embedded processing and remote observation of biomedical measurements.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"A-03",title:"Smart Fingerprint Attendance System",cat:"automation",featured:false,rank:"B",
+ image:"images/projects/fingerprint/cover.jpg",gallery:["images/projects/fingerprint/1.jpg"],
+ desc:"A fingerprint-based attendance system for automated identification and record keeping.",
+ objective:"Automate attendance using biometric identification.",
+ technology:"Embedded C • Fingerprint interface • LCD",
+ hardware:"AS608 fingerprint sensor • controller • LCD",
+ result:"Prototype completed.",
+ details:"The system reads a fingerprint, identifies a registered user and presents the attendance result.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"E-01",title:"Piezoelectric Power Generation & Storage",cat:"energy",featured:true,rank:"A",
+ image:"images/projects/piezoelectric/cover.jpg",gallery:["images/projects/piezoelectric/1.jpg"],
+ desc:"An energy-harvesting prototype investigating conversion of mechanical vibration into electrical energy and storage.",
+ objective:"Explore small-scale electrical energy generation from mechanical excitation.",
+ technology:"Piezoelectric transduction • Rectification • Energy storage",
+ hardware:"Piezoelectric elements • rectifier • capacitor / battery",
+ result:"Experimental prototype.",
+ details:"The project investigates the relationship between mechanical excitation and harvested electrical output and provides a practical introduction to energy harvesting.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"S-02",title:"EMG-Based Alcohol Detection & Signaling",cat:"safety",featured:false,rank:"A",
+ image:"images/projects/emg-safety/cover.jpg",gallery:["images/projects/emg-safety/1.jpg"],
+ desc:"A prototype exploring physiological sensing and alert generation for a driver-safety concept.",
+ objective:"Explore a measurable physiological signal as an input to a safety-alert system.",
+ technology:"EMG • Embedded processing • Alert system",
+ hardware:"EMG sensor • controller • buzzer / indicator",
+ result:"Prototype / research concept.",
+ details:"The project explores signal acquisition and decision logic for a safety-oriented embedded application.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"A-04",title:"Smart Electricity Theft Detection",cat:"automation",featured:false,rank:"A",
+ image:"images/projects/electricity-theft/cover.jpg",gallery:["images/projects/electricity-theft/1.jpg"],
+ desc:"A monitoring concept for identifying abnormal electricity usage and communicating an alert.",
+ objective:"Detect suspicious electrical usage patterns using embedded sensing.",
+ technology:"Current sensing • GSM/GPS • Embedded systems",
+ hardware:"Current sensor • microcontroller • GSM/GPS",
+ result:"Prototype / concept system.",
+ details:"The system combines electrical measurement with communication to support an automated abnormal-usage alert workflow.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"A-05",title:"Home Automation System",cat:"automation",featured:false,rank:"B",
+ image:"images/projects/home-automation/cover.jpg",gallery:["images/projects/home-automation/1.jpg"],
+ desc:"An embedded home-control system for monitoring and controlling electrical appliances.",
+ objective:"Demonstrate remote or automated control of household electrical loads.",
+ technology:"IoT • Microcontroller • Relay control",
+ hardware:"Controller • relay module • sensors • loads",
+ result:"Prototype completed.",
+ details:"The project demonstrates basic IoT-oriented electrical load control and embedded automation.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"A-06",title:"Smart Street Light Control",cat:"automation",featured:false,rank:"B",
+ image:"images/projects/street-light/cover.jpg",gallery:["images/projects/street-light/1.jpg"],
+ desc:"An automatic lighting concept based on environmental light and activity conditions.",
+ objective:"Reduce unnecessary lighting operation through automatic control.",
+ technology:"LDR sensing • Automation • Embedded control",
+ hardware:"LDR • controller • relay / LED lighting",
+ result:"Prototype completed.",
+ details:"The project demonstrates automatic lighting decisions using environmental sensing.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"S-03",title:"Emergency Alert System",cat:"safety",featured:false,rank:"B",
+ image:"images/projects/emergency-alert/cover.jpg",gallery:["images/projects/emergency-alert/1.jpg"],
+ desc:"An embedded emergency-notification prototype that sends an alert when a trigger condition is detected.",
+ objective:"Provide fast notification after an emergency event.",
+ technology:"GSM • Sensors • Embedded systems",
+ hardware:"Controller • sensors • GSM module • buzzer",
+ result:"Prototype completed.",
+ details:"The system connects event detection to an automated notification workflow.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"R-05",title:"Line Following & Obstacle Avoidance Robot",cat:"robotics",featured:false,rank:"A",
+ image:"images/projects/line-following/cover.jpg",gallery:["images/projects/line-following/1.jpg"],
+ desc:"An autonomous mobile robot that follows a line while reacting to obstacles.",
+ objective:"Combine path following and obstacle detection in one mobile platform.",
+ technology:"Embedded C • IR sensing • Ultrasonic sensing",
+ hardware:"IR sensors • ultrasonic sensor • motors • driver",
+ result:"Working prototype.",
+ details:"The project combines sensor-based navigation with motor control and decision logic.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"R-06",title:"Robotic Hand",cat:"robotics",featured:false,rank:"A",
+ image:"images/projects/robotic-hand/cover.jpg",gallery:["images/projects/robotic-hand/1.jpg"],
+ desc:"A servo-driven mechanical hand designed to reproduce finger movement for basic gripping and manipulation.",
+ objective:"Develop coordinated finger actuation using servo motors.",
+ technology:"Servo control • Embedded systems",
+ hardware:"Servo motors • controller • mechanical fingers",
+ result:"Prototype completed.",
+ details:"The system demonstrates coordinated multi-servo control for a compact robotic manipulation platform.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"R-07",title:"Soccer Bot",cat:"robotics",featured:false,rank:"B",
+ image:"images/projects/soccer-bot/cover.jpg",gallery:["images/projects/soccer-bot/1.jpg"],
+ desc:"A competition-oriented mobile robot developed for robotic soccer activities.",
+ objective:"Build a responsive mobile platform for competitive robot movement.",
+ technology:"Embedded control • Motor control",
+ hardware:"Motors • driver • controller • chassis",
+ result:"Competition project.",
+ details:"The project focuses on responsive movement, motor control and practical robot construction.",
+ paper:"",github:"",demo:""
+},
+{
+ code:"R-08",title:"EMG Controlled Hand",cat:"robotics",featured:false,rank:"A",
+ image:"images/projects/emg-hand/cover.jpg",gallery:["images/projects/emg-hand/1.jpg"],
+ desc:"A robotic-hand concept controlled through electromyography signals.",
+ objective:"Map muscle activity into robotic hand movement.",
+ technology:"EMG signal acquisition • Embedded control • Servo control",
+ hardware:"EMG sensor • microcontroller • servos",
+ result:"Prototype / development project.",
+ details:"The project investigates human-machine interaction through physiological signal acquisition and actuator control.",
+ paper:"",github:"",demo:""
+}
 ];
-
 const icons={robotics:"◈",automation:"⌘",safety:"♡",energy:"ϟ"};
 const grid=document.getElementById("projectGrid");
-
+function imageFallback(img){
+  img.onerror=()=>{img.onerror=null;img.src="images/projects/project-placeholder.jpg";}
+}
 function render(filter="all"){
   grid.innerHTML="";
   projects.forEach(p=>{
@@ -425,46 +650,102 @@ function render(filter="all"){
     if(!show)return;
     const el=document.createElement("article");
     el.className="card project reveal in";
-    el.innerHTML=`<div class="project-top"><span class="project-code">${p.code} / ${icons[p.cat]}</span><span class="rank rank-${p.rank}">${p.rank}</span></div>
-      <h3>${p.title}</h3><p>${p.desc}</p><span class="tech">${p.tech}</span>`;
-    el.onclick=()=>openModal(p);grid.appendChild(el);
+    el.setAttribute("tabindex","0");
+    el.setAttribute("role","button");
+    el.setAttribute("aria-label","Open project details for "+p.title);
+    el.innerHTML=`
+      <img class="project-card-image" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.onerror=null;this.src='images/projects/project-placeholder.jpg'">
+      <div class="project-top">
+        <span class="project-code">${p.code} / ${icons[p.cat]||p.cat.toUpperCase()}</span>
+        <span class="rank rank-${p.rank}">${p.rank}</span>
+      </div>
+      <h3>${p.title}</h3>
+      <p>${p.desc}</p>
+      <div class="project-open">OPEN CASE STUDY <span>↗</span></div>`;
+    const open=()=>openModal(p);
+    el.onclick=open;
+    el.onkeydown=e=>{
+      if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}
+    };
+    grid.appendChild(el);
   });
 }
 render();
-
 document.getElementById("filters").onclick=e=>{
   if(!e.target.classList.contains("filter"))return;
   document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
   e.target.classList.add("active");render(e.target.dataset.filter);
 };
-
-/* ---------- MODAL ---------- */
+/* ---------- PROJECT DETAIL MODAL ---------- */
 const modal=document.getElementById("modal");
 function openModal(p){
   document.getElementById("mCode").textContent=p.code+" / "+p.cat.toUpperCase();
   document.getElementById("mTitle").textContent=p.title;
+  const img=document.getElementById("mImage");
+  img.src=p.image;img.alt=p.title;
+  img.onerror=()=>{img.onerror=null;img.src="images/projects/project-placeholder.jpg"};
   document.getElementById("mDesc").textContent=p.desc;
-  document.getElementById("mMeta").innerHTML=`<span class="tech">${p.tech}</span><span class="tech">RANK ${p.rank}</span>`;
-  modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.classList.add("modal-open");
+  document.getElementById("mObjective").textContent=p.objective;
+  document.getElementById("mTechnology").textContent=p.technology;
+  document.getElementById("mHardware").textContent=p.hardware;
+  document.getElementById("mResult").textContent=p.result;
+  document.getElementById("mDetails").textContent=p.details;
+  const gallery=document.getElementById("mGallery");
+  const images=(p.gallery||[]).filter(Boolean);
+  gallery.innerHTML="";
+  if(images.length){
+    images.forEach(src=>{
+      const im=document.createElement("img");
+      im.src=src;im.alt=p.title+" project image";im.loading="lazy";
+      im.onerror=()=>im.remove();
+      gallery.appendChild(im);
+    });
+  }else{
+  }
+  const actions=document.getElementById("mActions");
+  actions.innerHTML="";
+  const addAction=(label,href,cls="")=>{
+    if(!href)return;
+    const a=document.createElement("a");
+    a.className="btn "+cls;
+    a.href=href;
+    a.target="_blank";
+    a.rel="noopener";
+    a.textContent=label;
+    actions.appendChild(a);
+  };
+  addAction("Project Paper",p.paper,"gold");
+  addAction("GitHub Repository",p.github);
+  addAction("Demo / Video",p.demo);
+  if(!actions.children.length){
+    const note=document.createElement("span");
+    note.className="resource-note";
+    note.textContent="Technical resources will be added here as the project documentation is published.";
+    actions.appendChild(note);
+  }
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden","false");
+  document.body.classList.add("modal-open");
 }
-function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");document.body.classList.remove("modal-open")}
+function closeModal(){
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden","true");
+  document.body.classList.remove("modal-open");
+}
 document.getElementById("modalClose").onclick=closeModal;
 document.getElementById("modalBg").onclick=closeModal;
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
-
 /* ---------- SCROLL REVEAL ---------- */
 const observer=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in")});
 },{threshold:.12});
 document.querySelectorAll(".card,.section-head,.timeline,.about-copy,.stats,.gallery").forEach(x=>{x.classList.add("reveal");observer.observe(x)});
-
 /* ---------- ACTIVE NAV ---------- */
 const navSections=[...document.querySelectorAll("section[id]")],navAnchors=[...document.querySelectorAll(".nav-links a")];
 const navObserver=new IntersectionObserver(entries=>{
  entries.forEach(e=>{if(e.isIntersecting)navAnchors.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id))})
 },{rootMargin:"-45% 0px -50% 0px"});
 navSections.forEach(s=>navObserver.observe(s));
-
 /* ---------- THREE.JS HERO ---------- */
 (function(){
  const canvas=document.getElementById("hero-canvas"),hero=document.getElementById("hero");
