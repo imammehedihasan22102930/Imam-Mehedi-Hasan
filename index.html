@@ -212,30 +212,14 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 <!--
-PROJECT ASSET STRUCTURE
-Create these folders inside your GitHub Pages repository:
-images/
-  projects/
-    project-placeholder.jpg
-    pose-lock/
-      cover.jpg
-      1.jpg
-      2.jpg
-      3.jpg
-    medicine-authenticity/
-      cover.jpg
-      1.jpg
-      2.jpg
-    hexapod/
-      cover.jpg
-      1.jpg
-      2.jpg
-    ...
-For a project paper, put the PDF in something like:
-papers/pose-lock-paper.pdf
-Then change that project's "paper" field from "" to:
-paper:"papers/pose-lock-paper.pdf"
-For a YouTube/demo link, put it in the project's "demo" field.
+PROJECT ASSET STRUCTURE (inside your GitHub Pages repository)
+images/projects/project-placeholder.jpg
+images/projects/pose-lock/cover.jpg, 1.jpg, 2.jpg
+images/projects/human-following/HFR.jpg, HFR_vector.jpg
+images/projects/hexapod/hexapod.jpg
+images/projects/<other-project>/cover.jpg, 1.jpg
+File names are case-sensitive on GitHub Pages.
+Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
 -->
 </head>
 <body>
@@ -276,7 +260,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   <div class="scroll">SCROLL ↓</div>
 </section>
 
-  
 <section id="about">
   <div class="section-head"><div class="section-num">01 / Profile</div><h2 class="section-title">About Me</h2><div class="rule"></div></div>
   <div class="about-grid">
@@ -302,7 +285,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   </div>
 </section>
 
-  
 <section id="research">
   <div class="section-head"><div class="section-num">02 / Research</div><h2 class="section-title">Research Interests</h2><div class="rule"></div></div>
   <div class="grid grid-3">
@@ -326,7 +308,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   </div>
 </section>
 
-  
 <section id="skills">
   <div class="section-head"><div class="section-num">04 / Toolkit</div><h2 class="section-title">Technical Skills</h2><div class="rule"></div></div>
   <div class="skill-groups">
@@ -345,7 +326,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   </div>
 </section>
 
-  
 <section id="projects">
   <div class="section-head"><div class="section-num">05 / Engineering Work</div><h2 class="section-title">Selected Projects</h2><div class="rule"></div></div>
   <div class="filter-row" id="filters">
@@ -369,7 +349,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   </div>
 </section>
 
-  
 <section id="achievements">
   <div class="section-head"><div class="section-num">07 / Highlights</div><h2 class="section-title">Achievements & Activities</h2><div class="rule"></div></div>
   <div class="grid grid-3">
@@ -397,7 +376,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   </div>
 </section>
 
-  
 <section id="gallery">
   <div class="section-head"><div class="section-num">10 / Visual</div><h2 class="section-title">Gallery</h2><div class="rule"></div></div>
   <div class="gallery">
@@ -407,7 +385,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   </div>
 </section>
 
-  
 <section id="contact">
   <div class="section-head"><div class="section-num">11 / Connect</div><h2 class="section-title">Let's Connect</h2><div class="rule" style="margin-left:auto;margin-right:auto"></div></div>
   <p class="contact-text">I am interested in engineering opportunities, research collaboration, academic projects and practical EEE work.</p>
@@ -419,7 +396,6 @@ For a YouTube/demo link, put it in the project's "demo" field.
   </div>
 </section>
 
-  
 <footer>© 2026 IMAM MEHEDI HASAN • ELECTRICAL & ELECTRONIC ENGINEERING • JKKNIU</footer>
 <div class="modal" id="modal" aria-hidden="true">
   <div class="modal-bg" id="modalBg"></div>
@@ -453,15 +429,15 @@ document.querySelectorAll(".nav-links a").forEach(a=>a.onclick=()=>navLinks.clas
 const projects=[
 {
  code:"R-01",title:"Pose Lock Smart Intelligence Robot",cat:"robotics",featured:true,rank:"S",
- image:"images/projects/pose-lock/HFR.jpg",gallery:["images/projects/pose-lock/HFR.jpg","images/projects/pose-lock/HFR_vector.jpg",],
+ image:"images/projects/pose-lock/cover.jpg",
+ gallery:["images/projects/pose-lock/1.jpg","images/projects/pose-lock/2.jpg"],
  desc:"A Raspberry Pi based intelligent mobile robot that detects a human target through camera-based pose landmarks, maintains a target lock and performs a controlled search when the target is lost.",
  objective:"Detect and lock onto a visible human target while combining vision, distance sensing and motor control.",
  technology:"Raspberry Pi 4B • Python • MediaPipe Pose • OpenCV",
  hardware:"USB webcam • 4 gear motors • dual H-bridge • ultrasonic sensor • buzzer • LEDs",
  result:"Completed prototype. Target-locking and lost-target search logic implemented and tested.",
  details:"The system uses MediaPipe pose landmarks for human detection, an ultrasonic sensor for distance awareness and a motor driver for movement. When the target is lost, the robot provides an alert and performs a slow search behaviour.",
- paper:"",
- github:"",demo:""
+ paper:"",github:"",demo:""
 },
 {
  code:"A-01",title:"Medicine Authenticity Detection System",cat:"automation",featured:true,rank:"S",
@@ -473,13 +449,12 @@ const projects=[
  hardware:"HX711 load cell module • UV detector • LCD • ESP32-CAM",
  result:"Completed prototype with sensor measurement, camera streaming and monitoring interface.",
  details:"The system integrates multiple sensing methods with a camera stream and LCD output. Measurements can be collected and viewed through a lightweight Flask/OpenCV interface.",
- paper:"",
- github:"",demo:""
+ paper:"",github:"",demo:""
 },
-  
 {
  code:"R-02",title:"Human Following Robot",cat:"robotics",featured:true,rank:"A",
- image:"images/projects/human-following/cover.jpg",gallery:["images/projects/human-following/1.jpg"],
+ image:"images/projects/human-following/HFR.jpg",
+ gallery:["images/projects/human-following/HFR.jpg","images/projects/human-following/HFR_vector.jpg"],
  desc:"A camera-based mobile robot concept that uses human position information to control movement in real time.",
  objective:"Estimate human position and translate visual information into robot movement.",
  technology:"Python • Computer Vision • MediaPipe",
@@ -488,10 +463,10 @@ const projects=[
  details:"The project focuses on the connection between computer vision and mobile robot control, providing a practical foundation for intelligent navigation.",
  paper:"",github:"",demo:""
 },
-  
 {
  code:"R-03",title:"Hexapod Robot",cat:"robotics",featured:true,rank:"S",
- image:"images/projects/hexapod/cover.jpg",gallery:["images/projects/hexapod/1.jpg","images/projects/hexapod/2.jpg"],
+ image:"images/projects/hexapod/hexapod.jpg",
+ gallery:["images/projects/hexapod/hexapod.jpg"],
  desc:"A six-legged robotic platform developed around coordinated servo movement and walking patterns.",
  objective:"Develop a multi-leg robot capable of coordinated movement using servo actuation.",
  technology:"Embedded control • Servo programming • Robotics",
@@ -657,9 +632,6 @@ const projects=[
 ];
 const icons={robotics:"◈",automation:"⌘",safety:"♡",energy:"ϟ"};
 const grid=document.getElementById("projectGrid");
-function imageFallback(img){
-  img.onerror=()=>{img.onerror=null;img.src="images/projects/project-placeholder.jpg";}
-}
 function render(filter="all"){
   grid.innerHTML="";
   projects.forEach(p=>{
@@ -708,17 +680,16 @@ function openModal(p){
   document.getElementById("mResult").textContent=p.result;
   document.getElementById("mDetails").textContent=p.details;
   const gallery=document.getElementById("mGallery");
+  const galleryTitle=document.getElementById("galleryTitle");
   const images=(p.gallery||[]).filter(Boolean);
   gallery.innerHTML="";
-  if(images.length){
-    images.forEach(src=>{
-      const im=document.createElement("img");
-      im.src=src;im.alt=p.title+" project image";im.loading="lazy";
-      im.onerror=()=>im.remove();
-      gallery.appendChild(im);
-    });
-  }else{
-  }
+  images.forEach(src=>{
+    const im=document.createElement("img");
+    im.src=src;im.alt=p.title+" project image";im.loading="lazy";
+    im.onerror=()=>{im.remove();galleryTitle.style.display=gallery.children.length?"":"none"};
+    gallery.appendChild(im);
+  });
+  galleryTitle.style.display=images.length?"":"none";
   const actions=document.getElementById("mActions");
   actions.innerHTML="";
   const addAction=(label,href,cls="")=>{
