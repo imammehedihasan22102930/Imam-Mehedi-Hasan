@@ -428,15 +428,16 @@ document.querySelectorAll(".nav-links a").forEach(a=>a.onclick=()=>navLinks.clas
 /* ---------- PROJECT DATA ---------- */
 const projects=[
 {
- code:"R-01",title:"Pose Lock Smart Intelligence Robot",cat:"robotics",featured:true,rank:"S",
- image:"images/projects/pose-lock/cover.jpg",
- gallery:["images/projects/pose-lock/1.jpg","images/projects/pose-lock/2.jpg"],
- desc:"A Raspberry Pi based intelligent mobile robot that detects a human target through camera-based pose landmarks, maintains a target lock and performs a controlled search when the target is lost.",
- objective:"Detect and lock onto a visible human target while combining vision, distance sensing and motor control.",
- technology:"Raspberry Pi 4B • Python • MediaPipe Pose • OpenCV",
- hardware:"USB webcam • 4 gear motors • dual H-bridge • ultrasonic sensor • buzzer • LEDs",
- result:"Completed prototype. Target-locking and lost-target search logic implemented and tested.",
- details:"The system uses MediaPipe pose landmarks for human detection, an ultrasonic sensor for distance awareness and a motor driver for movement. When the target is lost, the robot provides an alert and performs a slow search behaviour.",
+{
+ code:"R-01",title:"Smart Car",cat:"robotics",featured:true,rank:"S",
+ image:"smart_car.jpg",
+ gallery:["smart_car_1.jpg","smart_car_2.jpg","smar_car.jpg],
+ desc:"An intelligent mobile robotic car designed for autonomous movement, obstacle detection and responsive navigation.",
+ objective:"Develop a smart robotic vehicle capable of detecting obstacles and making movement decisions automatically.",
+ technology:"Embedded C • Sensor-Based Navigation • Motor Control",
+ hardware:"Microcontroller • DC gear motors • motor driver • ultrasonic sensor • chassis",
+ result:"Completed prototype. Autonomous movement and obstacle-detection functions implemented and tested.",
+ details:"The Smart Car combines distance sensing with embedded motor control to detect obstacles and adjust its movement accordingly. The project demonstrates practical integration of sensors, actuators and real-time decision-making in a mobile robotic platform.",
  paper:"",github:"",demo:""
 },
 {
@@ -601,7 +602,8 @@ const projects=[
 },
 {
  code:"R-06",title:"Robotic Hand",cat:"robotics",featured:false,rank:"A",
- image:"images/projects/robotic-hand/cover.jpg",gallery:["images/projects/robotic-hand/1.jpg"],
+ image:"robotic_hanf_1.jpg",
+ gallery:["robotic_hand_1.jpg","robotic_hand_2.jpg"],
  desc:"A servo-driven mechanical hand designed to reproduce finger movement for basic gripping and manipulation.",
  objective:"Develop coordinated finger actuation using servo motors.",
  technology:"Servo control • Embedded systems",
