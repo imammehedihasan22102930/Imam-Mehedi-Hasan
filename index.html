@@ -6,6 +6,10 @@
 <meta name="robots" content="index, follow">
 <meta name="description" content="Imam Mehedi Hasan — Electrical and Electronic Engineering student at Jatiya Kabi Kazi Nazrul Islam University. Power engineering, embedded systems, robotics and applied research.">
 <meta name="theme-color" content="#071018">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Imam Mehedi Hasan | EEE Engineer & Researcher">
+<meta property="og:description" content="EEE student working in power engineering, embedded systems, robotics and applied research.">
+<meta property="og:image" content="mehedi.png">
 <title>Imam Mehedi Hasan | EEE Engineer & Researcher</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,7 +104,7 @@ border-radius:10px;padding:25px;transition:.3s;position:relative}
 .stat{text-align:center;padding:18px 10px;border:1px solid var(--line);background:#0c1722;border-radius:8px}
 .stat-number{display:block;font:700 1.5rem "Space Grotesk";color:var(--green)}
 .stat-label{display:block;color:var(--muted);font-size:.65rem;margin-top:3px}
-/* RESEARCH */
+/* RESEARCH INTERESTS */
 .interest-card{min-height:155px}
 .interest-card h3{font-size:1rem}
 .research-note{margin-top:20px;padding:18px 20px;border-left:2px solid var(--gold);background:#ffb84d08;color:var(--muted);font-size:.88rem}
@@ -131,12 +135,12 @@ background:var(--green);box-shadow:0 0 0 4px #00e5a018}
 .rank-B{color:var(--blue);border-color:#70bfff55}
 .project h3{margin-bottom:8px}.project p{min-height:68px}
 .tech{display:inline-block;margin-top:14px;font-size:.62rem;color:var(--green);border:1px solid #00e5a033;padding:4px 8px;border-radius:20px}
-/* EXPERIENCE / ACHIEVEMENTS */
+/* EXPERIENCE */
 .experience{border-left:2px solid var(--green)}
 .experience .period{color:var(--gold);font:.7rem "JetBrains Mono"}
 .experience ul{padding-left:18px;margin-top:12px;color:var(--muted);font-size:.88rem}
 .experience li{margin:6px 0}
-/* RESEARCH */
+/* RESEARCH OUTPUT */
 .research-card .status{font:.65rem "JetBrains Mono";color:var(--gold)}
 .research-card h3{margin:9px 0}
 .research-card p{margin-bottom:12px}
@@ -156,14 +160,14 @@ linear-gradient(135deg,#142331,#0b141e);display:grid;place-items:center;text-ali
 .contact-text{max-width:620px;margin:0 auto 25px;color:var(--muted)}
 .contact-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
 footer{text-align:center;border-top:1px solid var(--line);padding:28px 5vw;color:var(--muted);font:10px "JetBrains Mono"}
-/* PROJECT DETAIL EXPERIENCE */
+/* PROJECT DETAIL */
 .project-cover{
   width:100%;aspect-ratio:16/9;object-fit:cover;display:block;
   border-radius:8px;border:1px solid var(--line);background:#09131d;
   margin:14px 0 18px;
 }
 .project-card-image{
-  width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center;
+  aspect-ratio:16/9;object-fit:cover;object-position:center;
   border-radius:7px;margin:-25px -25px 18px;width:calc(100% + 50px);
   border-bottom:1px solid var(--line);display:block;background:#09131d;
 }
@@ -212,14 +216,12 @@ border:1px solid #00e5a044;border-radius:12px;box-shadow:0 35px 100px #000b;padd
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 <!--
-PROJECT ASSET STRUCTURE (inside your GitHub Pages repository)
-images/projects/project-placeholder.jpg
-images/projects/pose-lock/cover.jpg, 1.jpg, 2.jpg
-images/projects/human-following/HFR.jpg, HFR_vector.jpg
-images/projects/hexapod/hexapod.jpg
-images/projects/<other-project>/cover.jpg, 1.jpg
-File names are case-sensitive on GitHub Pages.
-Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
+ASSET NOTES (GitHub Pages file names are case-sensitive)
+Root folder:     mehedi.png, profile.jpg, m_1.jpg, m_2.jpg, Imam_Mehedi_Hasan_Resume_Corporate.pdf,
+                 and the .webp project images used in the projects list below.
+Subfolders:      images/projects/project-placeholder.jpg  (fallback image, must exist)
+                 images/projects/<project-name>/cover.jpg|webp, 1.jpg|webp, 2.jpg|webp
+Papers:          use file names without spaces, for example papers/emg-robotic-hand-paper.pdf
 -->
 </head>
 <body>
@@ -232,7 +234,7 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
     <a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a>
     <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
     <a href="#achievements">Highlights</a><a href="#research-work">Publications</a>
-    <a href="#cv">CV</a><a href="#contact">Contact</a>
+    <a href="#cv">CV</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="Open navigation"><span></span><span></span><span></span></button>
 </nav>
@@ -266,7 +268,7 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
     <div class="about-copy">
       <p>I am Imam Mehedi Hasan, an Electrical and Electronic Engineering student at Jatiya Kabi Kazi Nazrul Islam University.</p>
       <p>My technical work combines electronics, embedded programming, robotics, automation and engineering problem-solving. I prefer learning through practical systems, measurement, simulation and prototype development.</p>
-      <p>My long-term direction is to grow as an engineer and researcher, with particular interest in power engineering, intelligent systems and applied research.</p>
+      <p>My long-term goal is to grow as an engineer and researcher, with a particular interest in power engineering, intelligent systems and applied research.</p>
       <div class="stats">
         <div class="stat"><span class="stat-number">EEE</span><span class="stat-label">DISCIPLINE</span></div>
         <div class="stat"><span class="stat-number">18+</span><span class="stat-label">PROJECTS</span></div>
@@ -296,13 +298,14 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
   </div>
   <div class="research-note">Research direction: building measurable engineering systems and turning practical prototypes into reproducible academic work.</div>
 </section>
+
 <section id="education">
   <div class="section-head"><div class="section-num">03 / Education</div><h2 class="section-title">Academic Journey</h2><div class="rule"></div></div>
   <div class="timeline">
     <div class="t-item"><div class="t-year">PRESENT • 2026</div><div class="t-title">Jatiya Kabi Kazi Nazrul Islam University</div><div class="t-sub">B.Sc. (Engg.) in Electrical & Electronic Engineering</div></div>
     <div class="t-item"><div class="t-year">HSC</div><div class="t-title">Agricultural University College, Mymensingh</div><div class="t-sub">Higher Secondary Certificate</div></div>
     <div class="t-item"><div class="t-year">SSC</div><div class="t-title">Polisha High School</div><div class="t-sub">Secondary School Certificate</div></div>
-    </div>
+  </div>
 </section>
 
 <section id="skills">
@@ -329,16 +332,17 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
   </div>
   <div class="project-grid" id="projectGrid"></div>
 </section>
+
 <section id="experience">
   <div class="section-head"><div class="section-num">06 / Experience</div><h2 class="section-title">Research & Engineering Experience</h2><div class="rule"></div></div>
   <div class="grid grid-2">
     <div class="card experience"><div class="period">RESEARCH / UNIVERSITY LAB</div><h3>Research Project Work</h3>
-      <p>Working under academic supervision on communication, sensing and engineering research-oriented projects.</p>
+      <p>Working under academic supervision on communication, sensing and engineering research projects.</p>
       <ul><li>Prototype development and experimental measurement</li><li>Literature-based problem identification</li><li>Engineering simulation and analysis</li><li>Technical documentation and presentation</li></ul>
     </div>
     <div class="card experience"><div class="period">INDEPENDENT ENGINEERING</div><h3>Embedded & Robotics Development</h3>
       <p>Hands-on development of embedded and robotic systems using microcontrollers, Raspberry Pi, sensors and actuators.</p>
-      <ul><li>Hardware integration and troubleshooting</li><li>Firmware and Python development</li><li>Computer-vision based robotic control</li><li>System testing and iterative prototyping</li></ul>
+      <ul><li>Hardware integration and troubleshooting</li><li>Firmware and Python development</li><li>Computer-vision-based robotic control</li><li>System testing and iterative prototyping</li></ul>
     </div>
   </div>
 </section>
@@ -347,24 +351,25 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
   <div class="section-head"><div class="section-num">07 / Highlights</div><h2 class="section-title">Achievements & Activities</h2><div class="rule"></div></div>
   <div class="grid grid-3">
     <div class="card"><h3>Robotics Projects</h3><p>Built and tested multiple mobile, legged and intelligent robotic prototypes.</p></div>
-    <div class="card"><h3>Engineering Competitions</h3><p>Hands-on participation and project development around robotics and embedded engineering.</p></div>
-    <div class="card"><h3>Technical Portfolio</h3><p>Maintaining project documentation across GitHub and a dedicated engineering portfolio.</p></div>
+    <div class="card"><h3>Engineering Competitions</h3><p>Hands-on participation and project development in robotics and embedded engineering.</p></div>
+    <div class="card"><h3>Technical Portfolio</h3><p>Maintaining project documentation on GitHub and in a dedicated engineering portfolio.</p></div>
   </div>
 </section>
+
 <section id="research-work">
   <div class="section-head"><div class="section-num">08 / Research Output</div><h2 class="section-title">Research & Publications</h2><div class="rule"></div></div>
   <div class="grid grid-2">
     <div class="card research-card"><span class="status">IN PROGRESS</span><h3>Radiation Measurement Study</h3><p>Experimental investigation of radiation-level variation over time, with emphasis on measurement, data analysis and reproducibility.</p><span class="tech">EXPERIMENT • DATA ANALYSIS</span></div>
-    <div class="card research-card"><span class="status">DEVELOPING</span><h3>FSO based adaptive link design</h3><p>Free space optical sattelite communication by adaptive link design to faster data tranfer among sattelite-sattelite,uplink and downlink.</p><span class="tech">RASPBERRY PI • LEASURE • ADAPTIVE CONTROL • MATLAB • DATA ANALYSIS </span></div>
-    <div class="card research-card"><span class="status">DEVELOPING</span><h3>Power Optimization and develop a wall claimbing robot</h3><p>Develop a optimized wall climbing robot that can climb both wall and celling.</p><span class="tech">ESP32 • HARDWIRE • ADAPTIVE CONTROL •MATLAB • DATA ANALYSIS </span></div>
- 
+    <div class="card research-card"><span class="status">DEVELOPING</span><h3>FSO-Based Adaptive Link Design</h3><p>Free-space optical satellite communication using an adaptive link design for faster data transfer between satellites and on the uplink and downlink.</p><span class="tech">RASPBERRY PI • LASER • ADAPTIVE CONTROL • MATLAB • DATA ANALYSIS</span></div>
+    <div class="card research-card"><span class="status">DEVELOPING</span><h3>Power Optimization and Development of a Wall-Climbing Robot</h3><p>Develop an optimized wall-climbing robot that can climb both walls and ceilings.</p><span class="tech">ESP32 • HARDWARE • ADAPTIVE CONTROL • MATLAB • DATA ANALYSIS</span></div>
   </div>
 </section>
+
 <section id="cv">
   <div class="section-head"><div class="section-num">09 / Credentials</div><h2 class="section-title">Curriculum Vitae</h2><div class="rule"></div></div>
   <div class="card cv">
     <div class="cv-preview"><div><strong>CV</strong><br><span class="mono" style="font-size:.65rem;color:var(--muted)">IMAM MEHEDI HASAN</span></div></div>
-    <div class="cv-text"><h3>Professional Engineering Profile</h3><p>A concise CV covering academic background, technical skills, selected projects, research interests and engineering experience.</p><p style="font-size:.78rem;color:var(--muted)">Each selected project now has a dedicated detail view for images, technical information, GitHub resources, papers and future demo links.</p>
+    <div class="cv-text"><h3>Professional Engineering Profile</h3><p>A concise CV covering academic background, technical skills, selected projects, research interests and engineering experience.</p><p style="font-size:.78rem;color:var(--muted)">Each selected project has a dedicated detail view with images, technical information, GitHub resources, papers and demo links.</p>
       <div class="btns" style="justify-content:flex-start"><a class="btn primary" href="Imam_Mehedi_Hasan_Resume_Corporate.pdf" download>Download PDF</a>
       <a class="btn" href="https://www.linkedin.com/in/imam-mehedi-hasan-21b788353" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://www.researchgate.net/profile/Imam-Hasan-9?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a></div>
@@ -375,9 +380,9 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
 <section id="gallery">
   <div class="section-head"><div class="section-num">10 / Visual</div><h2 class="section-title">Gallery</h2><div class="rule"></div></div>
   <div class="gallery">
-    <img src="profile.jpg" alt="Imam Mehedi Hasan" loading="lazy">
-    <img src="m_1.jpg" alt="Engineering activity" loading="lazy">
-    <img src="m_2.jpg" alt="Engineering activity" loading="lazy">
+    <img src="profile.jpg" alt="Portrait of Imam Mehedi Hasan" loading="lazy">
+    <img src="m_1.jpg" alt="Imam Mehedi Hasan during an engineering activity" loading="lazy">
+    <img src="m_2.jpg" alt="Imam Mehedi Hasan working on an engineering project" loading="lazy">
   </div>
 </section>
 
@@ -393,9 +398,10 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
 </section>
 
 <footer>© 2026 IMAM MEHEDI HASAN • ELECTRICAL & ELECTRONIC ENGINEERING • JKKNIU</footer>
+
 <div class="modal" id="modal" aria-hidden="true">
   <div class="modal-bg" id="modalBg"></div>
-  <div class="modal-box">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
     <button class="modal-close" id="modalClose" aria-label="Close">×</button>
     <div class="modal-code" id="mCode"></div>
     <h2 id="mTitle"></h2>
@@ -415,13 +421,16 @@ Papers: papers/pose-lock-paper.pdf, then set paper:"papers/pose-lock-paper.pdf"
     <div class="modal-actions" id="mActions"></div>
   </div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 /* ---------- NAV ---------- */
 const navToggle=document.getElementById("navToggle"),navLinks=document.getElementById("navLinks");
 navToggle.onclick=()=>navLinks.classList.toggle("open");
-document.querySelectorAll(".nav-links a").forEach(a=>a.onclick=()=>navLinks.classList.remove("open"));
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>navLinks.classList.remove("open")));
+
 /* ---------- PROJECT DATA ---------- */
+const PLACEHOLDER="images/projects/project-placeholder.jpg";
 const projects=[
 {
  code:"R-01",title:"Smart Car",cat:"robotics",featured:true,rank:"S",
@@ -430,7 +439,7 @@ const projects=[
  desc:"An intelligent mobile robotic car designed for autonomous movement, obstacle detection and responsive navigation.",
  objective:"Develop a smart robotic vehicle capable of detecting obstacles and making movement decisions automatically.",
  technology:"Embedded C • Sensor-Based Navigation • Motor Control",
- hardware:"Microcontroller • DC gear motors • motor driver • ultrasonic sensor • chassis",
+ hardware:"Microcontroller • DC gear motors • Motor driver • Ultrasonic sensor • Chassis",
  result:"Completed prototype. Autonomous movement and obstacle-detection functions implemented and tested.",
  details:"The Smart Car combines distance sensing with embedded motor control to detect obstacles and adjust its movement accordingly. The project demonstrates practical integration of sensors, actuators and real-time decision-making in a mobile robotic platform.",
  paper:"",github:"",demo:""
@@ -454,7 +463,7 @@ const projects=[
  desc:"A camera-based mobile robot concept that uses human position information to control movement in real time.",
  objective:"Estimate human position and translate visual information into robot movement.",
  technology:"Python • Computer Vision • MediaPipe",
- hardware:"Camera • motors • motor driver • embedded controller",
+ hardware:"Camera • Motors • Motor driver • Embedded controller",
  result:"Prototype developed and tested.",
  details:"The project focuses on the connection between computer vision and mobile robot control, providing a practical foundation for intelligent navigation.",
  paper:"",github:"",demo:""
@@ -466,18 +475,19 @@ const projects=[
  desc:"A six-legged robotic platform developed around coordinated servo movement and walking patterns.",
  objective:"Develop a multi-leg robot capable of coordinated movement using servo actuation.",
  technology:"Embedded control • Servo programming • Robotics",
- hardware:"12 servos • controller • mechanical frame • power system",
+ hardware:"12 servos • Controller • Mechanical frame • Power system",
  result:"Prototype completed.",
  details:"The hexapod explores gait coordination, servo timing, mechanical balance and embedded motion control.",
  paper:"",github:"",demo:""
 },
 {
  code:"R-04",title:"Wall Climbing Robot",cat:"robotics",featured:false,rank:"S",
- image:"images/projects/wall-climbing/cover.jpg",gallery:["images/projects/wall-climbing/1.jpg"],
+ image:"images/projects/wall-climbing/cover.jpg",
+ gallery:["images/projects/wall-climbing/1.jpg"],
  desc:"A surface-mobility robot designed to investigate controlled movement on vertical surfaces.",
  objective:"Explore a practical robotic mechanism for stable surface movement.",
  technology:"Motor control • Mechanical design • Embedded systems",
- hardware:"Motors • wheels/adhesion mechanism • controller",
+ hardware:"Motors • Wheels / adhesion mechanism • Controller",
  result:"Prototype / development project.",
  details:"The project combines mechanical design and motor control to study the challenges of maintaining traction while moving across a wall.",
  paper:"",github:"",demo:""
@@ -489,7 +499,7 @@ const projects=[
  desc:"An automated irrigation prototype that uses environmental measurements to control watering.",
  objective:"Reduce unnecessary watering by making irrigation responsive to measured conditions.",
  technology:"Arduino / ESP32 • Sensors • Automation",
- hardware:"Soil/environment sensors • pump • relay • controller",
+ hardware:"Soil / environment sensors • Pump • Relay • Controller",
  result:"Working prototype.",
  details:"The system connects sensor readings with an automatic pump-control decision, demonstrating a practical embedded automation application.",
  paper:"",github:"",demo:""
@@ -501,63 +511,67 @@ const projects=[
  desc:"A biomedical monitoring prototype for acquiring ECG signals and presenting measurements for remote observation.",
  objective:"Acquire and communicate ECG information using an embedded monitoring system.",
  technology:"ECG sensing • Embedded systems • Wireless communication",
- hardware:"ECG sensor • microcontroller • display / communication module",
+ hardware:"ECG sensor • Microcontroller • Display / communication module",
  result:"Prototype developed.",
  details:"The project focuses on signal acquisition, embedded processing and remote observation of biomedical measurements.",
  paper:"",github:"",demo:""
 },
 {
  code:"A-03",title:"Smart Fingerprint Attendance System",cat:"automation",featured:false,rank:"B",
- image:"images/projects/fingerprint/cover.jpg",gallery:["images/projects/fingerprint/1.jpg"],
+ image:"images/projects/fingerprint/cover.jpg",
+ gallery:["images/projects/fingerprint/1.jpg"],
  desc:"A fingerprint-based attendance system for automated identification and record keeping.",
  objective:"Automate attendance using biometric identification.",
  technology:"Embedded C • Fingerprint interface • LCD",
- hardware:"AS608 fingerprint sensor • controller • LCD",
+ hardware:"AS608 fingerprint sensor • Controller • LCD",
  result:"Prototype completed.",
- details:"The system reads a fingerprint, identifies a registered user and presents the attendance result.",
+ details:"The system reads a fingerprint, identifies a registered user and displays the attendance result.",
  paper:"",github:"",demo:""
 },
 {
  code:"E-01",title:"Piezoelectric Power Generation & Storage",cat:"energy",featured:true,rank:"A",
  image:"piezo_1.webp",
  gallery:["piezo_1.webp","piezo_2.webp"],
- desc:"An energy-harvesting prototype investigating conversion of mechanical vibration into electrical energy and storage.",
+ desc:"An energy-harvesting prototype investigating the conversion of mechanical vibration into electrical energy and its storage.",
  objective:"Explore small-scale electrical energy generation from mechanical excitation.",
  technology:"Piezoelectric transduction • Rectification • Energy storage",
- hardware:"Piezoelectric elements • rectifier • capacitor / battery",
+ hardware:"Piezoelectric elements • Rectifier • Capacitor / battery",
  result:"Experimental prototype.",
- details:"The project investigates the relationship between mechanical excitation and harvested electrical output and provides a practical introduction to energy harvesting.",
+ details:"The project investigates the relationship between mechanical excitation and harvested electrical output, and provides a practical introduction to energy harvesting.",
  paper:"",github:"",demo:""
 },
 {
  code:"S-02",title:"EMG-Based Alcohol Detection & Signaling",cat:"safety",featured:false,rank:"A",
- image:"alcohole_1.webp",gallery:["alcohole_1.webp","alcohole_2.webp"],
+ image:"alcohole_1.webp",
+ gallery:["alcohole_1.webp","alcohole_2.webp"],
  desc:"A prototype exploring physiological sensing and alert generation for a driver-safety concept.",
  objective:"Explore a measurable physiological signal as an input to a safety-alert system.",
  technology:"EMG • Embedded processing • Alert system",
- hardware:"EMG sensor • controller • buzzer / indicator",
+ hardware:"EMG sensor • Controller • Buzzer / indicator",
  result:"Prototype / research concept.",
  details:"The project explores signal acquisition and decision logic for a safety-oriented embedded application.",
  paper:"",github:"",demo:""
 },
 {
  code:"A-04",title:"Smart Electricity Theft Detection",cat:"automation",featured:false,rank:"A",
- image:"images/projects/electricity-theft/cover.jpg",gallery:["images/projects/electricity-theft/1.jpg"],
+ image:"images/projects/electricity-theft/cover.jpg",
+ gallery:["images/projects/electricity-theft/1.jpg"],
  desc:"A monitoring concept for identifying abnormal electricity usage and communicating an alert.",
  objective:"Detect suspicious electrical usage patterns using embedded sensing.",
  technology:"Current sensing • GSM/GPS • Embedded systems",
- hardware:"Current sensor • microcontroller • GSM/GPS",
+ hardware:"Current sensor • Microcontroller • GSM/GPS",
  result:"Prototype / concept system.",
  details:"The system combines electrical measurement with communication to support an automated abnormal-usage alert workflow.",
  paper:"",github:"",demo:""
 },
 {
  code:"A-05",title:"Home Automation System",cat:"automation",featured:false,rank:"B",
- image:"images/projects/home-automation/cover.jpg",gallery:["images/projects/home-automation/1.jpg"],
+ image:"images/projects/home-automation/cover.jpg",
+ gallery:["images/projects/home-automation/1.jpg"],
  desc:"An embedded home-control system for monitoring and controlling electrical appliances.",
  objective:"Demonstrate remote or automated control of household electrical loads.",
  technology:"IoT • Microcontroller • Relay control",
- hardware:"Controller • relay module • sensors • loads",
+ hardware:"Controller • Relay module • Sensors • Loads",
  result:"Prototype completed.",
  details:"The project demonstrates basic IoT-oriented electrical load control and embedded automation.",
  paper:"",github:"",demo:""
@@ -566,21 +580,22 @@ const projects=[
  code:"A-06",title:"Smart Street Light Control",cat:"automation",featured:false,rank:"B",
  image:"road_3.webp",
  gallery:["road_1.webp","road_2.webp","road_4.webp"],
- desc:"An automatic lighting concept based on environmental light and activity conditions.",
+ desc:"An automatic lighting concept based on ambient light and activity conditions.",
  objective:"Reduce unnecessary lighting operation through automatic control.",
- technology:"LDR sensing •Motion sensing • Automation • Embedded control",
- hardware:"LDR •motion sensor • controller • relay / LED lighting",
+ technology:"LDR sensing • Motion sensing • Automation • Embedded control",
+ hardware:"LDR • Motion sensor • Controller • Relay / LED lighting",
  result:"Prototype completed.",
  details:"The project demonstrates automatic lighting decisions using environmental sensing.",
  paper:"",github:"",demo:""
 },
 {
  code:"S-03",title:"Emergency Alert System",cat:"safety",featured:false,rank:"B",
- image:"images/projects/emergency-alert/cover.jpg",gallery:["images/projects/emergency-alert/1.jpg"],
+ image:"images/projects/emergency-alert/cover.jpg",
+ gallery:["images/projects/emergency-alert/1.jpg"],
  desc:"An embedded emergency-notification prototype that sends an alert when a trigger condition is detected.",
  objective:"Provide fast notification after an emergency event.",
  technology:"GSM • Sensors • Embedded systems",
- hardware:"Controller • sensors • GSM module • buzzer",
+ hardware:"Controller • Sensors • GSM module • Buzzer",
  result:"Prototype completed.",
  details:"The system connects event detection to an automated notification workflow.",
  paper:"",github:"",demo:""
@@ -592,7 +607,7 @@ const projects=[
  desc:"An autonomous mobile robot that follows a line while reacting to obstacles.",
  objective:"Combine path following and obstacle detection in one mobile platform.",
  technology:"Embedded C • IR sensing • Ultrasonic sensing",
- hardware:"IR sensors • ultrasonic sensor • motors • driver",
+ hardware:"IR sensors • Ultrasonic sensor • Motors • Motor driver",
  result:"Working prototype.",
  details:"The project combines sensor-based navigation with motor control and decision logic.",
  paper:"",github:"",demo:""
@@ -604,71 +619,62 @@ const projects=[
  desc:"A servo-driven mechanical hand designed to reproduce finger movement for basic gripping and manipulation.",
  objective:"Develop coordinated finger actuation using servo motors.",
  technology:"Servo control • Embedded systems",
- hardware:"Servo motors • controller • mechanical fingers",
+ hardware:"Servo motors • Controller • Mechanical fingers",
  result:"Prototype completed.",
  details:"The system demonstrates coordinated multi-servo control for a compact robotic manipulation platform.",
- paper:"Design and Implementation of an EMG_Final2.pdf",github:"",demo:""
+ paper:"Design%20and%20Implementation%20of%20an%20EMG_Final2.pdf",github:"",demo:""
 },
 {
  code:"R-07",title:"Soccer Bot",cat:"robotics",featured:false,rank:"B",
- image:"soccer_1.webp",gallery:["soccer_1.webp","soccer_2.webp","soccer_3.webp"],
+ image:"soccer_1.webp",
+ gallery:["soccer_1.webp","soccer_2.webp","soccer_3.webp"],
  desc:"A competition-oriented mobile robot developed for robotic soccer activities.",
  objective:"Build a responsive mobile platform for competitive robot movement.",
  technology:"Embedded control • Motor control",
- hardware:"Motors • driver • controller • chassis",
+ hardware:"Motors • Motor driver • Controller • Chassis",
  result:"Competition project.",
  details:"The project focuses on responsive movement, motor control and practical robot construction.",
  paper:"",github:"",demo:""
 },
 {
- code:"E-02",title:"Solar-wind hybrid power project",cat:"energy",featured:true,rank:"A",
+ code:"E-02",title:"Solar-Wind Hybrid Power Project",cat:"energy",featured:true,rank:"A",
  image:"hybrid_1.webp",
  gallery:["hybrid_1.webp","hybrid_2.webp","hybrid_3.webp"],
- desc:"A solar-wind hybrid project that supply continous power to a home by taking power from wind,solar and grid.",
- objective:"Hybrid power supply.",
+ desc:"A solar-wind hybrid project that supplies continuous power to a home by drawing power from wind, solar and the grid.",
+ objective:"Develop an automatic hybrid power supply that delivers uninterrupted electricity from solar, wind and grid sources.",
  technology:"Automation • Control",
- hardware:"Arduino UNO • Relay module • solar panel",
+ hardware:"Arduino UNO • Relay module • Solar panel",
  result:"Prototype / development project.",
- details:"The project that automatic work for continous power supply to a domestic area by generating sufficient power from solar and wind,and for backup it turn on the grid line.",
+ details:"The project automatically provides continuous power to a domestic area by generating sufficient power from solar and wind sources, and switches to the grid line as a backup.",
  paper:"",github:"",demo:""
 },
 {
-code:"A-07",title:"ESP32 Voice-Controlled Smart Home System",cat:"automation",featured:true,rank:"A",
-image:"images/projects/esp32-smart-home/cover.webp",
-gallery:["images/projects/esp32-smart-home/1.webp","images/projects/esp32-smart-home/2.webp"],
-desc:"An ESP32-based smart home automation system providing voice-controlled light and fan operation with automatic environmental control.",
-objective:"Develop an intelligent home automation system that combines voice commands with automatic control based on light intensity, temperature and humidity.",
-technology:"ESP32 • IoT • Voice Control • Sensor-Based Automation",
-hardware:"ESP32 • LDR • Temperature and humidity sensor • relay / fan control • LED light",
-result:"Working prototype. Voice-controlled appliance operation and automatic environmental-based control implemented and tested.",
-details:"The system uses an ESP32 as the main controller to operate household lighting and a fan. Voice commands can be used to control the appliances, while an LDR automatically responds to changes in light intensity. Temperature and humidity measurements are used to control the fan according to environmental conditions, demonstrating the integration of manual, voice and sensor-based automation.",
-paper:"",github:"",demo:""
+ code:"A-07",title:"ESP32 Voice-Controlled Smart Home System",cat:"automation",featured:true,rank:"A",
+ image:"images/projects/esp32-smart-home/cover.webp",
+ gallery:["images/projects/esp32-smart-home/1.webp","images/projects/esp32-smart-home/2.webp"],
+ desc:"An ESP32-based smart home automation system providing voice-controlled light and fan operation with automatic environmental control.",
+ objective:"Develop an intelligent home automation system that combines voice commands with automatic control based on light intensity, temperature and humidity.",
+ technology:"ESP32 • IoT • Voice Control • Sensor-Based Automation",
+ hardware:"ESP32 • LDR • Temperature and humidity sensor • Relay / fan control • LED light",
+ result:"Working prototype. Voice-controlled appliance operation and automatic environment-based control implemented and tested.",
+ details:"The system uses an ESP32 as the main controller to operate household lighting and a fan. Voice commands can be used to control the appliances, while an LDR automatically responds to changes in light intensity. Temperature and humidity measurements are used to control the fan according to environmental conditions, demonstrating the integration of manual, voice and sensor-based automation.",
+ paper:"",github:"",demo:""
 },
 {
-code:"S-04",title:"Smart Medicine Alert System",cat:"safety",featured:true,rank:"A",
-image:"images/projects/medicine-alert/cover.webp",
-gallery:["images/projects/medicine-alert/1.webp","images/projects/medicine-alert/2.webp"],
-desc:"An Arduino UNO-based medicine reminder system designed to provide timely alerts for scheduled medication.",
-objective:"Develop an automated medicine reminder system that helps users take medication at the scheduled time.",
-technology:"Arduino UNO • Embedded C • Real-Time Scheduling • Alert System",
-hardware:"Arduino UNO • LCD / display • buzzer • push buttons • RTC module",
-result:"Prototype developed and tested.",
-details:"The system uses an Arduino UNO to manage medication schedules and generate an audible or visual alert when medicine needs to be taken. The design can support multiple medication schedules and provides a simple embedded solution for improving medication-time awareness.",
-paper:"",github:"",demo:""
-},
-{
-code:"R-01",title:"Smart Car",cat:"robotics",featured:true,rank:"S",
-image:"smart_car.webp",
-gallery:["smart_car_1.webp","smart_car_2.webp","smar_car.webp"],
-desc:"An intelligent mobile robotic car designed for autonomous movement, obstacle detection and responsive navigation.",
-objective:"Develop a smart robotic vehicle capable of detecting obstacles and making movement decisions automatically.",
-technology:"Embedded C • Sensor-Based Navigation • Motor Control",
-hardware:"Microcontroller • DC gear motors • motor driver • ultrasonic sensor • chassis",
-result:"Completed prototype. Autonomous movement and obstacle-detection functions implemented and tested.",
-details:"The Smart Car combines distance sensing with embedded motor control to detect obstacles and adjust its movement accordingly. The project demonstrates practical integration of sensors, actuators and real-time decision-making in a mobile robotic platform.",
-paper:"",github:"",demo:""
+ code:"S-04",title:"Smart Medicine Alert System",cat:"safety",featured:true,rank:"A",
+ image:"images/projects/medicine-alert/cover.webp",
+ gallery:["images/projects/medicine-alert/1.webp","images/projects/medicine-alert/2.webp"],
+ desc:"An Arduino UNO-based medicine reminder system designed to provide timely alerts for scheduled medication.",
+ objective:"Develop an automated medicine reminder system that helps users take medication at the scheduled time.",
+ technology:"Arduino UNO • Embedded C • Real-time scheduling • Alert system",
+ hardware:"Arduino UNO • LCD / display • Buzzer • Push buttons • RTC module",
+ result:"Prototype developed and tested.",
+ details:"The system uses an Arduino UNO to manage medication schedules and generate an audible or visual alert when medicine needs to be taken. The design can support multiple medication schedules and provides a simple embedded solution for improving medication-time awareness.",
+ paper:"",github:"",demo:""
 }
 ];
+
+/* ---------- PROJECT GRID ---------- */
 const icons={robotics:"◈",automation:"⌘",safety:"♡",energy:"ϟ"};
 const grid=document.getElementById("projectGrid");
 function render(filter="all"){
@@ -682,7 +688,7 @@ function render(filter="all"){
     el.setAttribute("role","button");
     el.setAttribute("aria-label","Open project details for "+p.title);
     el.innerHTML=`
-      <img class="project-card-image" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.onerror=null;this.src='images/projects/project-placeholder.jpg'">
+      <img class="project-card-image" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER}'">
       <div class="project-top">
         <span class="project-code">${p.code} / ${icons[p.cat]||p.cat.toUpperCase()}</span>
         <span class="rank rank-${p.rank}">${p.rank}</span>
@@ -704,14 +710,15 @@ document.getElementById("filters").onclick=e=>{
   document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
   e.target.classList.add("active");render(e.target.dataset.filter);
 };
+
 /* ---------- PROJECT DETAIL MODAL ---------- */
 const modal=document.getElementById("modal");
 function openModal(p){
   document.getElementById("mCode").textContent=p.code+" / "+p.cat.toUpperCase();
   document.getElementById("mTitle").textContent=p.title;
   const img=document.getElementById("mImage");
+  img.onerror=()=>{img.onerror=null;img.src=PLACEHOLDER};
   img.src=p.image;img.alt=p.title;
-  img.onerror=()=>{img.onerror=null;img.src="images/projects/project-placeholder.jpg"};
   document.getElementById("mDesc").textContent=p.desc;
   document.getElementById("mObjective").textContent=p.objective;
   document.getElementById("mTechnology").textContent=p.technology;
@@ -724,8 +731,9 @@ function openModal(p){
   gallery.innerHTML="";
   images.forEach(src=>{
     const im=document.createElement("img");
-    im.src=src;im.alt=p.title+" project image";im.loading="lazy";
+    im.alt=p.title+" project image";im.loading="lazy";
     im.onerror=()=>{im.remove();galleryTitle.style.display=gallery.children.length?"":"none"};
+    im.src=src;
     gallery.appendChild(im);
   });
   galleryTitle.style.display=images.length?"":"none";
@@ -762,17 +770,20 @@ function closeModal(){
 document.getElementById("modalClose").onclick=closeModal;
 document.getElementById("modalBg").onclick=closeModal;
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+
 /* ---------- SCROLL REVEAL ---------- */
 const observer=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in")});
 },{threshold:.12});
-document.querySelectorAll(".card,.section-head,.timeline,.about-copy,.stats,.gallery").forEach(x=>{x.classList.add("reveal");observer.observe(x)});
+document.querySelectorAll(".card:not(.project),.section-head,.timeline,.about-copy,.stats,.gallery").forEach(x=>{x.classList.add("reveal");observer.observe(x)});
+
 /* ---------- ACTIVE NAV ---------- */
 const navSections=[...document.querySelectorAll("section[id]")],navAnchors=[...document.querySelectorAll(".nav-links a")];
 const navObserver=new IntersectionObserver(entries=>{
  entries.forEach(e=>{if(e.isIntersecting)navAnchors.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id))})
 },{rootMargin:"-45% 0px -50% 0px"});
 navSections.forEach(s=>navObserver.observe(s));
+
 /* ---------- THREE.JS HERO ---------- */
 (function(){
  const canvas=document.getElementById("hero-canvas"),hero=document.getElementById("hero");
